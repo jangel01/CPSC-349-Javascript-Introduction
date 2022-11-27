@@ -1,0 +1,23 @@
+{
+  "name": "cpsc349-project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync --files '*.html, *.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jangel01/cpsc349-project3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jangel01/cpsc349-project3/issues"
+  },
+  "homepage": "https://github.com/jangel01/cpsc349-project3#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
