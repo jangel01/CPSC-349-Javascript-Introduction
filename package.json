@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync --files './**/*.html, ./**/*.js, ./css/main.css'",
-    "tailwind": "tailwindcss -i ./input.css -o ./css/main.css --watch --poll",
+    "browser-sync": "browser-sync --files './**/*.html, ./**/*.js, ./main.css'",
+    "tailwind": "tailwindcss -i ./input.css -o ./main.css --watch --poll",
     "vnu" : "",
     "standard" : "",
     "test": "npm-run-all --parallel vnu standard",
