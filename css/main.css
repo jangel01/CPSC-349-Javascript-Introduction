@@ -583,9 +583,9 @@ video {
   font-style: italic;
 }
 
-.text-purple-400 {
+.text-yellow-400 {
   --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .text-red-400 {

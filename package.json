@@ -6,7 +6,10 @@
   "scripts": {
     "browser-sync": "browser-sync --files './**/*.html, ./**/*.js, ./css/main.css'",
     "tailwind": "tailwindcss -i ./input.css -o ./css/main.css --watch --poll",
-    "start" : "npm-run-all --parallel browser-sync tailwind"
+    "vnu" : "",
+    "standard" : "",
+    "test": "npm-run-all --parallel vnu standard",
+    "start": "npm-run-all --parallel browser-sync tailwind"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,8 @@
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.2.4"
+    "standard": "^17.0.0",
+    "tailwindcss": "^3.2.4",
+    "vnu-jar": "^22.9.29"
   }
 }
