@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./**/*.html', './node_modules/tw-elements/dist/js/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero': "url('./images/background.jpeg')",
+      },
+    },
   },
   plugins: [require("tw-elements/dist/plugin")],
 }
