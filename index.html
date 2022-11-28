@@ -9,32 +9,47 @@
     <link rel="stylesheet" href="./main.css">
     <script type="module" src="./main.js"></script>
 </head>
+
 <body class = "text-center font-bold">
     <header>
-        <h1 class = "text-3xl mt-10 mb-5"> Rock, Paper, Scissors</h1>
+        <h1 class = "text-5xl mt-20 mb-10"> Rock, Paper, Scissors</h1>
 
     </header>
     <main>
 
-    <div class = " border-2 border-black">
-        <h2 class = "text-xl">Scoreboard</h2>
-        <h3 class = "mb-5"> Best out of 3</h3>
-        <p>Player 1: 0</p>
-        <p>Player 2: 0</p>
+    <div class="flex items-center justify-center mb-10 scale-125">
 
+        <div class = " border-2 border-black px-40">
+            <h2 class = "text-2xl">Scoreboard</h2>
+            <h3 class = "text-xl mb-5"> Best out of 3</h3>
+            <p class = "text-lg">Computer: 0</p>
+            <p class = "text-lg">You: 0</p>
+    
+        </div>
     </div>
 
 
-    <div class="flex items-center justify-center mb-3">
+    <div class="flex items-center justify-center mb-10 space-x-10">
         <div class="flex justify-center">
             <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-              <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Player 1</h5>
+              <h5 class="text-gray-900 text-2xl leading-tight font-medium mb-5">Computer</h5>
+              <img
+                src="images/rock.jpeg"
+                class="w-32"
+                alt="Avatar"
+                />
+
             </div>
         </div>
 
         <div class="flex justify-center">
             <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-              <h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Player 2</h5>
+              <h5 class="text-gray-900 text-2xl leading-tight font-medium mb-5">You</h5>
+              <img
+                src="images/paper.jpeg"
+                class="w-32"
+                alt="Avatar"
+                />
             </div>
         </div>
     </div>
