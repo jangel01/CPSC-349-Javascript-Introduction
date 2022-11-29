@@ -1,6 +1,22 @@
 
+window.onload = function(){
+    let r = document.getElementById("rock")
+    let p = document.getElementById("paper")
+    let s = document.getElementById("scissors")
+    if(r){
+        r.addEventListener('click', function(){guess(1)}, true)
+    }
+    if(p){
+        p.addEventListener('click', function(){guess(2)}, false)
+    }
+    if(s){
+        s.addEventListener('click', function(){guess(3)}, false)
+    }
+}
+
 let player_score = 0
 let computer_score = 0
+
 
 /**
  * player_selection: 1 rock, 2 paper, 3 scissors
