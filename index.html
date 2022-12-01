@@ -22,14 +22,16 @@
 
         <div class = " border-2 border-black px-40 bg-white">
             <h2 class = "text-2xl">Scoreboard</h2>
-            <h3 class = "text-xl mb-5"> Best out of 3</h3>
+            <h3 id="best" class = "text-xl mb-5"> Best out of </h3>
             <p id="player_score" class = "text-lg">You: 0</p>
             <p id="computer_score" class = "text-lg">Computer: 0</p>
     
         </div>
     </div>
 
-
+    <div class="mb-5">
+        <p id="round" class="text-lg">Round 1</p>
+    </div>
     <div class="flex items-center justify-center mb-10 space-x-20">
         <div class="flex justify-center">
             <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm border-2 border-black">
@@ -56,6 +58,7 @@
     </div>
 
     <div class="flex items-center justify-center mb-3 scale-150">
+        
         <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group">
             <button id="rock" type="button" class="rounded-l inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:ring-0 active:bg-gray-800 transition duration-150 ease-in-out">Rock </button>
             <button id="paper" type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:ring-0 active:bg-gray-800 transition duration-150 ease-in-out">Paper </button>
