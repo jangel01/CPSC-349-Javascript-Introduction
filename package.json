@@ -6,9 +6,7 @@
   "scripts": {
     "browser-sync": "browser-sync --files './**/*.html, ./**/*.js, ./main.css'",
     "tailwind": "tailwindcss -i ./input.css -o ./main.css --watch --poll",
-    "vnu": "",
-    "standard": "",
-    "test": "npm-run-all --parallel vnu standard",
+    "test": "standard && vnu --skip-non-html --Werror *.html",
     "start": "npm-run-all --parallel browser-sync tailwind"
   },
   "repository": {

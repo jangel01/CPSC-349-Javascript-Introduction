@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('./images/background.jpeg')",
-      },
-    },
+        hero: "url('./images/background.jpeg')"
+      }
+    }
   },
-  plugins: [require("tw-elements/dist/plugin")],
+  plugins: [require('tw-elements/dist/plugin')]
 }
