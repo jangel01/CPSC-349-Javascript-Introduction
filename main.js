@@ -58,9 +58,9 @@ function guess (player_selection) {
     cscore = 0
   }
 
-  if (player_selection == computer_selection) {
+  if (player_selection === computer_selection) {
     // Tie
-  } else if (player_selection - computer_selection == 1 || player_selection - computer_selection == -2) {
+  } else if (player_selection - computer_selection === 1 || player_selection - computer_selection === -2) {
     window.localStorage.setItem('player_score', pscore += 1)
   } else {
     window.localStorage.setItem('computer_score', cscore += 1)
