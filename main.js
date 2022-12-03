@@ -18,7 +18,7 @@ window.onload = function(){
     var cscore = parseInt(window.localStorage.getItem("computer_score"))
     var guess_time = parseInt(window.localStorage.getItem("guess_time"))
     var best =parseInt(window.localStorage.getItem("best"))
-    
+
     if(pscore){
         document.getElementById("player_score").innerText = "Your: " + pscore
     }
@@ -36,7 +36,7 @@ window.onload = function(){
 
 /**
  * player_selection: 1 rock, 2 paper, 3 scissors
- * @param {*} player_selection 
+ * @param {*} player_selection
  */
 function guess(player_selection){
 
@@ -95,18 +95,40 @@ function guess(player_selection){
 
     window.localStorage.setItem("guess_time", guess_time+=1)
     document.getElementById("round").innerHTML = "Round " + guess_time
-    
-    
+
+
     if(guess_time > max_guess){
-        alert("game finished.")
-        window.localStorage.removeItem("player_score")
-        window.localStorage.removeItem("computer_score")
-        window.localStorage.removeItem("guess_time")
-        document.getElementById("round").innerHTML = "Round 1"
-        
-        document.getElementById("player_score").innerText = "Your: " + 0
-        document.getElementById("computer_score").innerText = "Computer: " + 0
-        
+        if(pscore > cscore)
+        {
+          if (confirm("You won game over. Do u want to play again?")) {
+            window.localStorage.removeItem("player_score")
+            window.localStorage.removeItem("computer_score")
+            window.localStorage.removeItem("guess_time")
+            document.getElementById("round").innerHTML = "Round 1"
+
+            document.getElementById("player_score").innerText = "Your: " + 0
+            document.getElementById("computer_score").innerText = "Computer: " + 0
+          }
+          else {
+            alert("Thanks for playing!")
+          }
+        }
+        else if(pscore < cscore)
+        {
+          if (confirm("You lost game over. Do u want to play again?")) {
+            window.localStorage.removeItem("player_score")
+            window.localStorage.removeItem("computer_score")
+            window.localStorage.removeItem("guess_time")
+            document.getElementById("round").innerHTML = "Round 1"
+
+            document.getElementById("player_score").innerText = "Your: " + 0
+            document.getElementById("computer_score").innerText = "Computer: " + 0
+          }
+          else {
+            alert("Thanks for playing!")
+          }
+        }
+
     }
 
 }
