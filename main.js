@@ -113,6 +113,18 @@ function guess (player_selection) {
       } else {
         alert('Thanks for playing!')
       }
+    } else if (pscore == cscore) {
+      if (confirm('You tied. Do you want to play again?')) {
+        window.localStorage.removeItem('player_score')
+        window.localStorage.removeItem('computer_score')
+        window.localStorage.removeItem('guess_time')
+        document.getElementById('round').innerHTML = 'Round 1'
+
+        document.getElementById('player_score').innerText = 'You: ' + 0
+        document.getElementById('computer_score').innerText = 'Computer: ' + 0
+      } else {
+        alert('Thanks for playing!')
+      }
     }
   }
 }
