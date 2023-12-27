@@ -1,8 +1,5 @@
 CPSC 349 - Web Front End Engineering
 
-# cpsc349-project3
-
-
 ## Group 19 Members
 
 - Zhiqiang Liu (zliu80@csu.fullerton.edu)
